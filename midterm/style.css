@@ -1,0 +1,87 @@
+/* this is the stylesheet */
+
+#container{
+margin: 0 auto;
+width: 1000px;
+padding-left: 100px;
+padding-right:100px;
+}
+
+.banner{
+  margin: 0 auto;
+  width: 800px;
+
+}
+
+h1{
+  font-size: 50px;
+  color:#ffb800;
+  font-family: Times, serif;
+  text-align: center;
+}
+
+#byline{
+  font-size: 15px;
+  color:#963827;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.subhead{
+  font-size: 20px;
+  color:#E8573C;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p{
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.pullquote{
+
+  font-size: 30px;
+  font-family: helvetica, sans-serif;
+  font-style: italic;
+  margin: 20px;
+  padding: 15px;
+  color: #ffb800;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+
+}
+
+.question{
+  font-size: 12px;
+  color:#000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: oblique;
+}
+
+/* i want the people being interviewed to stand out in the article- so giving them a different color will help them pop on the page */
+.interview{
+  font-size: 15px;
+  color:#963827;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: bold;
+}
+
+.image{
+  max-width: 800px;
+  padding-left: 100px;
+  padding-right: 100px;
+
+}
+
+.caption{
+  color:grey;
+  padding-left: 100px;
+  font-size: 15px;
+}
+
+.related{
+  background: #ffb800;
+  margin: 25px;
+  padding:5px;
+  text-align: center;
+}
