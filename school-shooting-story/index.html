@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--bootstrap css-->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!-- Load c3.css -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Gothic+A1&display=swap" rel="stylesheet">
+
+   <!-- Load our CSS -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- Load d3.js and c3.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
+   <!-- Load google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,700&display=swap" rel="stylesheet">
+
+<title> School Shootings Story </title>
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <a class="navbar-brand" href="#">
+
+     <img src= "images/star-red.png" class= "star-top">
+     <img src= "images/star-blue.png" class= "star-top">
+     An American Tragedy</a>
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+         <a class="nav-link"  href= "#wherewhen"> Where and When</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="#"> The Carnage</a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="#"> Profile</a>
+       </li>
+     </ul>
+   </div>
+  </nav>
+</div>
+
+
+<center> <img src= "images/ar15.jpg" class="hero-image"> </center>
+
+<div class="container">
+
+<p class="headline"> An <span class="blue">American </span>Tragedy </p>
+<p class="subhead"> Over 200 School Shootings in two decades. </p>
+<p class="subhead"> What have we learned? </p>
+
+<center>
+<img src= "images/star-red.png" class= "star-mid">
+<img src= "images/star-blue.png" class= "star-mid">
+<img src= "images/star-red.png" class= "star-mid">
+<img src= "images/star-blue.png" class= "star-mid">
+</center>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-3"></div>
+<div class="col-md-6">
+
+<p class= "intro-text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit felis, dictum non venenatis euismod, scelerisque id lacus. In hac habitasse platea dictumst. Duis tincidunt fringilla ligula ac condimentum. Integer diam odio, fringilla sit amet finibus nec, mollis sit amet libero. Quisque ante orci, facilisis facilisis nisi et, fermentum varius neque. Mauris ante sapien, faucibus et suscipit vitae, dictum a risus. Donec at tempor nisl. Aliquam egestas magna porta sollicitudin tristique.</p>
+</div>
+<div class="col-md-3"></div>
+
+</div>
+
+<div class="row">
+
+
+  <div class="chapterhead">
+    <img src= "images/star-red.png" class= "star-chap">
+    <img src= "images/star-blue.png" class= "star-chap">
+    <a id ="wherewhen">
+    Where & When
+  </a>
+  </div>
+
+
+<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lacus vel facilisis volutpat est velit egestas dui id. Odio tempor orci dapibus ultrices in iaculis nunc. Magna etiam tempor orci eu lobortis elementum nibh. Quisque non tellus orci ac auctor. Condimentum mattis pellentesque id nibh tortor. Dolor purus non enim praesent elementum facilisis. Egestas maecenas pharetra convallis posuere morbi leo urna. At augue eget arcu dictum. Mauris ultrices eros in cursus turpis. Adipiscing elit pellentesque habitant morbi tristique senectus et. Iaculis eu non diam phasellus. Enim sed faucibus turpis in. Felis donec et odio pellentesque. Accumsan sit amet nulla facilisi morbi tempus. Quam nulla porttitor massa id.</p>
+
+<img src="images/alaina-petty.jpg" class="stack=image">
+<p class="caption">Caption: Insert image or video above</p>
+
+<p>Id nibh tortor id aliquet lectus proin nibh nisl. Consectetur adipiscing elit duis tristique sollicitudin nibh sit amet. Elementum curabitur vitae nunc sed velit. Mauris pellentesque pulvinar pellentesque habitant morbi tristique senectus. Nibh venenatis cras sed felis eget velit aliquet sagittis. Lorem sed risus ultricies tristique nulla. Fusce ut placerat orci nulla pellentesque dignissim enim sit amet. Ut aliquam purus sit amet. Sagittis id consectetur purus ut. Velit egestas dui id ornare arcu odio ut sem nulla. Mauris in aliquam sem fringilla ut morbi tincidunt augue interdum.</p>
+
+
+<!-- Graphic container-->
+<div class="graphic-container">
+  <h2>Shootings by year</h2>
+  <p>The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
+  <div id="shootingsByYearChart"></div>
+  <em>Source: Data collected by The Washington Post</em>
+</div>
+<!-- END graphic container-->
+
+<p>Tortor dignissim convallis aenean et tortor at risus viverra. Sagittis aliquam malesuada bibendum arcu vitae elementum curabitur. Consectetur a erat nam at lectus urna duis convallis convallis. Lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi. Odio pellentesque diam volutpat commodo sed egestas egestas. In cursus turpis massa tincidunt dui ut. Arcu dictum varius duis at consectetur. Aenean sed adipiscing diam donec adipiscing. Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Nisi porta lorem mollis aliquam ut porttitor leo. Cursus vitae congue mauris rhoncus aenean.</p>
+
+</div>
+
+</div>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- c3 script-->
+<script>
+//CHART 1
+var chart = c3.generate({
+ bindto: '#shootingsByYearChart',
+ data: {
+   x: 'x',
+   columns: [
+     ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
+     ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
+   ]
+ },
+ color: {
+   pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+ }
+});
+
+
+     </script>
+
+<footer class="footer"> Footer Goes Here </footer>
+
+</body>
+
+
+</html>
