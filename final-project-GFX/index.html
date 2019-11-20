@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--bootstrap css-->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!-- Load c3.css -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+   <!-- Load our CSS -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- Load d3.js and c3.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+   <!-- google fonts -->
+
+   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|News+Cycle&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Oranienbaum&display=swap" rel="stylesheet">
+
+<title> Data Visualization Assignment Jenna Cohen </title>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+  <br>  <br>  <br>  <br>
+
+<!--first graphic-->
+  <div id= "graphic-container">
+
+    <h2> National Student Voting Rate vs. UMD Student Voting Rate </h2>
+
+    <p> At the same level of 19.3 percent in 2014, the voting rate doubled among both University of Maryland students and students nation wide.</p>
+
+    <div class="row">
+
+    <div class="col-md-1"> </div>
+
+    <div class="col-md-4">
+      <div id="votingRateChart"></div>
+    </div>
+
+    <div class="col-md-1"> </div>
+
+    <div class="col-md-4">
+      <div id="votingRateChart2"></div>
+    </div>
+
+    <div class="col-md-1"> </div>
+
+  </div>
+    <em> Source: Institute for Democracy & Higher Education (IDHE) at Tufts University’s Tisch College of Civic Life and UMD Right Now. </em>
+
+    </div>
+
+    <br>  <br>  <br>  <br>
+
+  <!--second graphic-->
+    <div class= "graphic-container">
+
+      <h2> Major Breakdown at the University of Maryland </h2>
+
+      <p> As you can see, the top majors at the University of Maryland are within the fields of science, mathematics, and technology, so it’s necessary for the Terps Vote coalition to have a strategy to reach the students that may not feel personally invested in politics.  </p>
+
+      <div id="majorChart"></div>
+
+      <em> Source: Data Collected by University of Maryland Office of Institutional Research, Planning and Assesment </em>
+
+    </div>
+
+    <br>  <br>  <br>  <br>
+
+    <div>
+
+    <h2> Top 10 Congressional Districts Where Youth Might Decide the 2018 Elections </h2>
+    <em> Source: The Center for Information & Research on Civic Learning & Engagement at Tufts Tisch College of Civic Life </em>
+
+    <iframe src="https://uploads.knightlab.com/storymapjs/6a7a4c70b0a6b1804b2c2d5fb98c1f96/data-viz-assignment/index.html" frameborder="0" width="100%" height="800"></iframe>
+
+    </div>
+
+</div>
+
+<!--storymap-->
+
+
+<!-- c3 script-->
+   <script type="text/javascript">
+
+   //chart1
+   var chart2 = c3.generate({
+      bindto: '#votingRateChart',
+      data: {
+        columns: [
+          ['National Students', 19.3],
+          ['UMD Students', 19.3],
+
+        ],
+        type: 'bar'
+      },
+
+      color: {
+        pattern: ['#2a8dc5', '#FF3127']
+      },
+
+      axis: {
+        y: {
+          max: 95,
+          tick: {
+                     format: function(value){
+                         return d3.format('.2%')(value/100)
+                     }
+                 }
+        }
+      }
+
+    });
+    //chart2
+    var chart2 = c3.generate({
+       bindto: '#votingRateChart2',
+       data: {
+         columns: [
+           ['National Students', 40.3],
+           ['UMD Students', 46],
+
+         ],
+         type: 'bar'
+       },
+       color: {
+         pattern: ['#2a8dc5', '#FF3127']
+       },
+
+       axis: {
+         y: {
+           max: 95,
+           tick: {
+                      format: function(value){
+                          return d3.format('.2%')(value/100)
+                      }
+                  }
+         }
+       }
+
+     });
+    //chart3
+    var chart3 = c3.generate({
+          bindto: '#majorChart',
+          data: {
+            // iris data from R
+            columns: [
+              ['A. James Clark School of Engineering', 13.8],
+              ['College of Agriculture and Natural Resources', 3.6],
+              ['College of Arts and Humanities', 7.4],
+              ['College of Behavioral and Social Sciences', 13.9],
+              ['College of Computer, Math and Natural Sciences', 21.5],
+              ['College of Education', 1.4],
+              ['College of Information Studies', 3.1],
+              ['Office of Extended Studies', 3.3],
+              ['Phillip Merrill College of Journalism', 1.5],
+              ['Robert H. Smith School of Business', 9.6],
+              ['School of Architecture, Planning and Preservation', 1.4],
+              ['School of Public Health', 7.9],
+              ['School of Public Policy', 0.7],
+              ['Undergraduate Studies', 10.9],
+
+            ],
+            type : 'pie',
+            onclick: function (d, i) { console.log("onclick", d, i); },
+            onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+            onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+          },
+          color: {
+            pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+          }
+        });
+
+
+</script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>

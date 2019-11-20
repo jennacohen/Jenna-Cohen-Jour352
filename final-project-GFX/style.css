@@ -1,0 +1,15 @@
+h2{
+font-family: 'Oranienbaum', serif;
+font-size: 45px;
+text-align: center;
+}
+
+p{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 20px;
+}
+
+em{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 14px;
+}
