@@ -1,0 +1,159 @@
+
+
+/*navbar styles*/
+.bg-light {
+ background:#ff0000 !important;
+}
+
+ul.navbar-nav {
+ margin-left:50%;
+}
+
+.navbar {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 700;
+}
+
+ .star-top{
+   width: 15px;
+   margin-left: 5px;
+ }
+
+
+
+/* default and text styles*/
+.headline{
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.subhead{
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+
+}
+
+.chapterhead{
+  text-align:left;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  font-weight: 700;
+  padding-top: 20px;
+  width: 100%;
+}
+
+
+p{
+ text-align:left;
+ line-height:180%;
+ font-size: 1em;
+ font-family: 'PT Serif', serif;
+ color: black;
+}
+
+.red {
+ color: #e0162b;
+}
+
+.blue {
+ color: #0052a5;
+}
+
+body{
+  font-family: 'PT Serif', serif;
+}
+
+.intro-text{
+  text-align:center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25em;
+  font-weight: 700;
+  max-width: 800px;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+a:Link:#e0162b;
+a:hover: #0052a5;
+a:visited:#999;
+
+.graphic-container-h2{
+  font-size: 2em;
+}
+
+.graphic-container{
+  padding-top:30px;
+padding-bottom:30px;
+border-top:1px solid #cdcdcd;
+border-bottom:1px solid #cdcdcd;
+font-family: 'Montserrat', sans-serif;
+margin:0 auto;
+}
+
+h2{
+font-family: 'Oranienbaum', serif;
+font-size: 45px;
+text-align: center;
+}
+
+em{
+  font-family: 'News Cycle', sans-serif;
+  font-size: 14px;
+}
+
+/*image and caption styles*/
+.image{
+  height: 500px
+  width: 800px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.caption{
+  width:100%;
+ max-width:900px;
+ margin:0 auto;
+ padding-bottom:30px;
+ font-family: 'Montserrat', sans-serif;
+ color:#999;
+}
+
+.hero-image{
+  margin-top:25px;
+  margin-bottom:25px;
+  max-width: 900px;
+  width: 100%
+
+
+}
+
+.star-mid{
+  width: 15px;
+  margin: 0 auto;
+
+}
+.star-chap{
+    width: 15px;
+}
+
+.stack-image{
+  width:100%;
+  max-width:900px;
+  margin:0 auto;
+  padding-top:30px;
+}
+
+footer{
+  background-color: black;
+  height: 100px;
+  padding: 25px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+
+}

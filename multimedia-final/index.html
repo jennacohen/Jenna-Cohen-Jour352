@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!--bootstrap css-->
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ <!-- Load c3.css -->
+ <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+
+   <!-- Load our CSS -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- Load d3.js and c3.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+   <!-- google fonts -->
+
+   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|News+Cycle&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Oranienbaum&display=swap" rel="stylesheet">
+
+<title> Multimedia Story Final Project </title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <a class="navbar-brand" href="#">
+
+     <img src= "images/star-red.png" class= "star-top">
+     <img src= "images/star-blue.png" class= "star-top">
+     College Voters</a>
+   </a>
+   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+   </button>
+
+     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+     <ul class="navbar-nav mr-auto">
+       <li class="nav-item">
+         <a class="nav-link"  href= "#numbers"> By the Numbers </a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="#overcoming"> Overcoming Being Overlooked </a>
+       </li>
+
+       <li class="nav-item">
+         <a class="nav-link" href="#Forward"> Looking Forward </a>
+       </li>
+     </ul>
+   </div>
+  </nav>
+  </div>
+
+
+  <center> <img src= "images/vote.jpeg" class="hero-image"> </center>
+
+  <div class="container">
+
+    <p class="headline"> College Voter Turnout is <span class="blue">increasing. </span> </p>
+    <p class="headline">Here's Why It Matters. </p>
+
+
+  <p class= "intro-text"> As we get closer to what some would argue being the most highly anticipated presidential election in American history, an important and previously overlooked demographic is college voters.  </p>
+
+  <div class="chapterhead">
+    <img src= "images/star-red.png" class= "star-chap">
+    <img src= "images/star-blue.png" class= "star-chap">
+    <a id ="numbers">
+    By the Numbers
+  </a>
+  </div>
+
+  <p>In last years midterm elections, University of Maryland’s students voting rate increased to 46 percent, from a rate of 19.3 percent in 2014, according to a campus report. </p>
+
+  <p>This matches the results found in a study done by the Institute for Democracy & Higher Education at Tufts University, which found an increase from 19.3 percent in 2014 to 40.3 percent in 2018. Based on these numbers, it is estimated at 7.5 million students voted in the 2018 midterm elections. </p>
+
+
+<!--first graphic ADD THE YEARS-->
+  <div id= "graphic-container">
+
+    <h2> National Student Voting Rate vs. UMD Student Voting Rate </h2>
+
+    <div class="row">
+
+    <div class="col-md-1"> </div>
+
+    <div class="col-md-4">
+      <div id="votingRateChart"></div>
+    </div>
+
+    <div class="col-md-1"> </div>
+
+    <div class="col-md-4">
+      <div id="votingRateChart2"></div>
+    </div>
+
+    <div class="col-md-1"> </div>
+
+  </div>
+    <em> Source: Institute for Democracy & Higher Education (IDHE) at Tufts University’s Tisch College of Civic Life and UMD Right Now. </em>
+
+    </div>
+
+    <br>  <br>
+
+      <p>At the University of Maryland, the Terps Vote coalition takes pride in this increase, and hopes to continue the rise of college students that vote in local, state, and national elections.</p>
+
+      <p>"Reaching a 46 percent student voting rate during a midterm election is a huge milestone, but we're already preparing for next fall’s presidential election,” said Patrick Saumell, Student Co-Chair for the Terps Vote Coalition. </p>
+
+      <img src="images/terpsvote.jpeg" class="stack=image">
+      <p class="caption">Caption: Insert image or video above</p>
+
+
+  <div class="chapterhead">
+    <img src= "images/star-red.png" class= "star-chap">
+    <img src= "images/star-blue.png" class= "star-chap">
+    <a id ="overcoming">
+    Overcoming Being Overlooked
+  </a>
+  </div>
+
+  <p>One of the biggest issues college voter advocacy organizations face is voter apathy. When asked about how Terps Vote combats problems of voter apathy, Samuell said they key is in making voting relatable to everyone.</p>
+
+  <p>“To use an example, for students in science and mathematics, a lot of the research opportunities are tied to federal funding. So then we try to put it in terms of that so something that will directly impact them and show them how voting, can actually have a direct impact on things that they care about” Saumell said.</p>
+
+  <p>The top majors at the University of Maryland are within the fields of science, mathematics, and technology, so it’s necessary for the Terps Vote coalition to have a strategy to reach the students that may not feel personally invested in politics.</p>
+
+
+  <!--second graphic-->
+    <div class= "graphic-container">
+
+      <h2> Major Breakdown at the University of Maryland </h2>
+
+      <p> As you can see, the top majors at the University of Maryland are within the fields of science, mathematics, and technology, so it’s necessary for the Terps Vote coalition to have a strategy to reach the students that may not feel personally invested in politics.  </p>
+
+      <div id="majorChart"></div>
+
+      <em> Source: Data Collected by University of Maryland Office of Institutional Research, Planning and Assesment </em>
+
+    </div>
+
+
+
+  <p>“I think it’s really powerful what they’re doing” sophomore government and politics major Rachel Jessee said. “They’re not too in the students faces. It’s a warm welcoming environment that encourages people to vote.”</p>
+
+  <div class="chapterhead">
+    <img src= "images/star-red.png" class= "star-chap">
+    <img src= "images/star-blue.png" class= "star-chap">
+    <a id ="Forward">
+      Looking Forward
+    </a>
+  </div>
+
+<p>As the primaries for the Democratic nomination fast approaching, Terps Vote is utilizing campus marketing resources, orientation presentations, and speaking in introductory university courses to encourage students to register to vote as well as provide the tools so they can better understand the voting process.</p>
+
+<p>“With the primary, there's lower voter turnout, so there’s a bigger chance for college aged voters to make a difference,” Saumell said.</p>
+
+<p>Many students share the sentiment of optimism when looking ahead to the impact college voters will have on the 2020 election. “They’re the face of the next generation. They’re the face of change” Hannah Wood, junior government and politics major said.</p>
+
+<p>TerpsVote announced that college voter turnout was 60 percent in the last presidential election. Following the trend of college voter increase, their goal is to have a turnout between 75 and 80 percent, Saumell said.</p>
+
+<footer class="footer"> Footer Goes Here </footer>
+
+</div>
+
+
+
+
+<!-- c3 script-->
+   <script type="text/javascript">
+
+   //chart1
+   var chart2 = c3.generate({
+      bindto: '#votingRateChart',
+      data: {
+        columns: [
+          ['National Students', 19.3],
+          ['UMD Students', 19.3],
+
+        ],
+        type: 'bar'
+      },
+
+      color: {
+        pattern: ['#2a8dc5', '#FF3127']
+      },
+
+      axis: {
+        y: {
+          max: 95,
+          tick: {
+                     format: function(value){
+                         return d3.format('.2%')(value/100)
+                     }
+                 }
+        }
+      }
+
+    });
+    //chart2
+    var chart2 = c3.generate({
+       bindto: '#votingRateChart2',
+       data: {
+         columns: [
+           ['National Students', 40.3],
+           ['UMD Students', 46],
+
+         ],
+         type: 'bar'
+       },
+       color: {
+         pattern: ['#2a8dc5', '#FF3127']
+       },
+
+       axis: {
+         y: {
+           max: 95,
+           tick: {
+                      format: function(value){
+                          return d3.format('.2%')(value/100)
+                      }
+                  }
+         }
+       }
+
+     });
+    //chart3
+    var chart3 = c3.generate({
+          bindto: '#majorChart',
+          data: {
+            // iris data from R
+            columns: [
+              ['A. James Clark School of Engineering', 13.8],
+              ['College of Agriculture and Natural Resources', 3.6],
+              ['College of Arts and Humanities', 7.4],
+              ['College of Behavioral and Social Sciences', 13.9],
+              ['College of Computer, Math and Natural Sciences', 21.5],
+              ['College of Education', 1.4],
+              ['College of Information Studies', 3.1],
+              ['Office of Extended Studies', 3.3],
+              ['Phillip Merrill College of Journalism', 1.5],
+              ['Robert H. Smith School of Business', 9.6],
+              ['School of Architecture, Planning and Preservation', 1.4],
+              ['School of Public Health', 7.9],
+              ['School of Public Policy', 0.7],
+              ['Undergraduate Studies', 10.9],
+
+            ],
+            type : 'pie',
+            onclick: function (d, i) { console.log("onclick", d, i); },
+            onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+            onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+          },
+          color: {
+            pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+          }
+        });
+
+
+</script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+
+
+</html>
