@@ -49,6 +49,13 @@ ul.navbar-nav {
   letter-spacing: -0.05em;
 }
 
+
+ @media only screen and (max-width: 500px) {
+  body {
+     .headline {font-size:1.5em;}
+  }
+}
+
 .headline-container{
 width: 100%;
 text-align: center;
@@ -68,7 +75,7 @@ text-align: center;
 p{
  text-align:left;
  line-height:180%;
- font-size: 1em;
+ font-size: 16px;
  font-family: 'PT Serif', serif;
  color: black;
 }
@@ -85,8 +92,12 @@ p{
  padding-top: 20px;
  width: 100%;
  line-height: 130%;
+}
 
-
+ @media only screen and (max-width: 500px) {
+  body {
+     .blue {font-size:1.5em;}
+  }
 }
 
 body{
@@ -138,6 +149,19 @@ em{
   font-family: 'Lato', sans-serif;
   font-size: 20px;
   text-align: center;
+}
+
+#pullquote{
+  text-align:center;
+  font-family: 'Lato', sans-serif;
+  font-size: 3em;
+  font-weight: 300;
+  max-width: 800px;
+  width: 100%;
+  margin:0 auto;
+  color: #FF2A1C;
+  border-top: 2px solid grey;
+  border-bottom: 2px solid grey;
 }
 
 /*image and caption styles*/
